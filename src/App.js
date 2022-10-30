@@ -29,7 +29,7 @@ function App() {
               </div>
             </div>
 
-            <h3 className="twitter">@judidoko</h3>
+            <h3 className="twitter">judidoko</h3>
             <label style={{ display: "none" }}>Idoko Jude </label>
           </div>
 

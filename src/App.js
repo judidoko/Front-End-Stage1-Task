@@ -1,7 +1,7 @@
 import "./App.css";
 import "./App.css";
 import { Container } from "react-bootstrap";
-import profileImg from "./img/profile-image.jpg";
+import profileImg from "./img/profile-pic.png";
 import logo from "./img/intern.png";
 import { BiCamera } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
@@ -43,7 +43,6 @@ function App() {
               style={{
                 fontSize: "20px",
                 color: "#98A2B3",
-                border: "1.66667px solid #98A2B3",
               }}
             />
           </button>
@@ -98,16 +97,16 @@ function App() {
           </div>
 
           {/* Footer Section */}
-          <footer>
-            <div className="flex_container">
+          <footer className="row">
+            <div className="flex_container col-sm-4">
               <h2>
                 Zuri <label></label> Intenship
               </h2>
             </div>
-            <div className="flex_container">
+            <div className="flex_container col-sm-4">
               <h6>HNG Internship 9 Frontend Task</h6>
             </div>
-            <div className="flex_container">
+            <div className="flex_container col-sm-4">
               <img src={logo} alt="" />
             </div>
           </footer>

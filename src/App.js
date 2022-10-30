@@ -17,15 +17,18 @@ function App() {
           {/* Profile Section */}
 
           <div className="profileSection">
-            <img className="profile_img" src={profileImg} alt="My profile" />
-            <div className="overlay">
-              <div className="content">
-                <input style={{ display: "none" }} type="file" id="file" />
-                <label className="cam" htmlFor="file">
-                  <BiCamera style={{ color: "#F9FAFB", fontSize: "28px" }} />
-                </label>
+            <div className="profile">
+              <img className="profile_img" src={profileImg} alt="My profile" />
+              <div className="overlay">
+                <div className="content">
+                  <input style={{ display: "none" }} type="file" id="file" />
+                  <label className="cam" htmlFor="file">
+                    <BiCamera style={{ color: "#F9FAFB", fontSize: "28px" }} />
+                  </label>
+                </div>
               </div>
             </div>
+
             <h3 className="twitter">@judidoko</h3>
             <label style={{ display: "none" }}>Idoko Jude </label>
           </div>
@@ -97,16 +100,16 @@ function App() {
           </div>
 
           {/* Footer Section */}
-          <footer className="row">
-            <div className="flex_container col-sm-4">
+          <footer>
+            <div className="flex_container">
               <h2>
                 Zuri <label></label> Intenship
               </h2>
             </div>
-            <div className="flex_container col-sm-4">
+            <div className="flex_container">
               <h6>HNG Internship 9 Frontend Task</h6>
             </div>
-            <div className="flex_container col-sm-4">
+            <div className="flex_container">
               <img src={logo} alt="" />
             </div>
           </footer>

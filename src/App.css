@@ -15,7 +15,13 @@
     margin-top: 50px;
    
 }
-
+.profile {
+    width: 88px;
+    height: 88px;
+    padding: 0px;
+    border-radius: 275px;
+    
+}
 .profile_img {
     width: 88px;
     height: 88px;
@@ -41,12 +47,14 @@
 .content {
     position: absolute;
     top: 50px;
-    /* left: 30px; */
     cursor: pointer;
 }
 
-.profileSection:hover .overlay {
+.profile:hover .overlay {
     opacity: 0.8;
+}
+.profile:focus .overlay {
+    opacity: 0;
 }
 
 /* Idoko Jude */
@@ -93,15 +101,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* width: 100%;
-    height: 76px;
-    padding: 24px 32px;
-    background: #EAECF0;
-    border: 1px solid #EAECF0;
-    border-radius: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    cursor: pointer; */
 }
 .btn__zuri, .books, .book__python, .pitch, .book__design {
     font-family: "inter", sans-serif;
@@ -120,14 +119,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #101828;
+    color: #101828;;
     width: 1152px;
     height: 76px;
 }
-a:hover {
+.linkSection a:hover {
     background: #D0D5DD;
+    color: #101828;
 }
-a:focus {
+.linkSection a:focus {
     background: #EAECF0;
     border: 1px solid #98A2B3;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #EBE9FE;
@@ -165,7 +165,7 @@ footer {
 footer>.flex_container {
     font-family: "inter", sans-serif;
     flex: 1 1 20%;
-    margin: 5px;
+    margin: 10px;
     height: 50px;
   }
   .flex_container h2 {
@@ -207,7 +207,7 @@ footer>.flex_container {
         position: absolute;
         width: 40px;
         height: 40px;
-        right: 60px;
+        right: 40px;
         top: 45px;
         border: 1px dashed #D0D5DD;
         border-radius: 20px;
@@ -222,18 +222,19 @@ footer>.flex_container {
     }
 
     footer {
-        /* display: block;
-        flex-direction: column; */
+        display: block;
+        flex-direction: column;
         align-items: left !important;
         text-align: left;
+        padding: 48px 0px;
    
     }
 
   }
 
   @media only screen and (max-width: 360px) {
-    .shareButton {
-        right: 50px;
+    .shareButtonDots {
+        right: 20px;
     }
     
   }

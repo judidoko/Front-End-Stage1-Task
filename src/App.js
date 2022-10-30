@@ -3,6 +3,7 @@ import "./App.css";
 import { Container } from "react-bootstrap";
 import profileImg from "./img/profile-pic.png";
 import logo from "./img/intern.png";
+import slackImg from "./img/logo1.JPG";
 import { BiCamera } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
 import { FiSlack } from "react-icons/fi";
@@ -92,7 +93,11 @@ function App() {
           {/* Social icon */}
           <div className="social_icon">
             <a href="https://hngi9.zuriboard.com/dashboard">
-              <FiSlack style={{ fontSize: "30px", color: "#36C5F0" }} />
+              <img
+                src={slackImg}
+                alt=""
+                style={{ width: "35px", height: "35px" }}
+              />
             </a>
             <a href="https://github.com/judidoko">
               <GoMarkGithub style={{ fontSize: "30px", color: "#000000" }} />

@@ -6,7 +6,6 @@ import logo from "./img/intern.png";
 import slackImg from "./img/logo1.JPG";
 import { BiCamera } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
-import { FiSlack } from "react-icons/fi";
 import { RiShareForwardLine } from "react-icons/ri";
 import { FiMoreHorizontal } from "react-icons/fi";
 

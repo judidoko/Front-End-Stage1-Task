@@ -120,7 +120,7 @@
     align-items: center;
     text-align: center;
     color: #101828;;
-    width: 1152px;
+    width: 1000px;
 }
 #link__section a:hover {
     background: #D0D5DD;
@@ -191,6 +191,9 @@ footer>#flex__container {
   }
 
   @media only screen and (max-width: 768px) {
+    #btn__zuri, #books, #book__python, #pitch, #book__design {
+        width: 343px;
+    }
     #share__button {
         right: 100px;
     }

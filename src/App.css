@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts#googleapis#com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
 
 /* profile__img*/
 
-.app {
+#app {
     width: 100%;
     height: 100%;
 }
 
-.profileSection {
+#profileSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,21 +15,21 @@
     margin-top: 50px;
    
 }
-.profile {
+#profile {
     width: 88px;
     height: 88px;
     padding: 0px;
     border-radius: 275px;
     
 }
-.profile_img {
+#profile_img {
     width: 88px;
     height: 88px;
     padding: 0px;
     border: 5.5px solid #EBE9FE;
     border-radius: 275px;
 }
-.overlay {
+#overlay {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -44,21 +44,21 @@
     background: linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75));
     cursor: pointer;
 }
-.content {
+#content {
     position: absolute;
     top: 50px;
     cursor: pointer;
 }
 
-.profile:hover .overlay {
+#profile:hover #overlay {
     opacity: 0.8;
 }
-.profile:focus .overlay {
+#profile:focus #overlay {
     opacity: 0;
 }
 
 /* Idoko Jude */
-.twitter {
+#twitter {
     font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -73,7 +73,7 @@
 }
 
 /* Share Botton */
-.shareButton {
+#shareButton {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -83,12 +83,12 @@
     border: 1px dashed #D0D5DD;
     border-radius: 20px;
 }
-.shareButton:hover {
+#shareButton:hover {
     background: #F9FAFB;
     color: #667085 !important;
     border: 1px dashed #D0D5DD;
 }
-.shareButton:focus {
+#shareButton:focus {
     background: #FFFFFF;
     border: 1px dashed #D0D5DD;
     box-shadow: 0px 0px 0px 4px #F2F4F7;
@@ -96,14 +96,14 @@
 
 /* Links Area */
 
-.linkSection {
+#linkSection {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.btn__zuri, .books, .book__python, .pitch, .book__design {
+#btn__zuri, #books, #book__python, #pitch, #book__design {
     font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -116,26 +116,24 @@
     margin-top: 8px;
     margin-bottom: 8px;
     text-decoration: none;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #101828;;
     width: 1152px;
-    height: 76px;
 }
-.linkSection a:hover {
+#linkSection a:hover {
     background: #D0D5DD;
     color: #101828;
 }
-.linkSection a:focus {
+#linkSection a:focus {
     background: #EAECF0;
     border: 1px solid #98A2B3;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #EBE9FE;
 }
 
 /* Social Icon */
-.social_icon {
+#social_icon {
     background: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -163,20 +161,20 @@ footer {
     background: #FFFFFF;
 }
 
-footer>.flex_container {
+footer>#flex_container {
     font-family: "inter", sans-serif;
     flex: 1 1 20%;
     margin: 10px;
     height: 50px;
   }
-  .flex_container h2 {
+  #flex_container h2 {
     font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
     line-height: 28px; 
   }
-  .flex_container h6 {
+  #flex_container h6 {
     font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -184,7 +182,7 @@ footer>.flex_container {
     line-height: 28px; 
     color: #667085;
   }
-  .flex_container label {
+  #flex_container label {
     background:#E7332B;
     height: 10px;
     width: 10px;
@@ -193,17 +191,17 @@ footer>.flex_container {
   }
 
   @media only screen and (max-width: 768px) {
-    .shareButton {
+    #shareButton {
         right: 100px;
     }
     
   }
 
   @media only screen and (max-width: 425px) {
-    .shareButton {
+    #shareButton {
         display: none;
     }
-    .shareButtonDots {
+    #shareButtonDots {
         display: block !important;
         position: absolute;
         width: 40px;
@@ -213,11 +211,11 @@ footer>.flex_container {
         border: 1px dashed #D0D5DD;
         border-radius: 20px;
     }
-    .shareButtonDots:hover {
+    #shareButtonDots:hover {
         background: #F9FAFB;
         border: 1px dashed #D0D5DD;
     }
-    .shareButtonDots:focus {
+    #shareButtonDots:focus {
         background: #FFFFFF;
         box-shadow: 0px 0px 0px 4px #F2F4F7;
     }
@@ -234,7 +232,7 @@ footer>.flex_container {
   }
 
   @media only screen and (max-width: 360px) {
-    .shareButtonDots {
+    #shareButtonDots {
         right: 20px;
     }
     

@@ -16,9 +16,9 @@ function App() {
         <div id="app">
           {/* Profile Section */}
 
-          <div id="profileSection">
+          <div id="profile__section">
             <div id="profile">
-              <img id="profile_img" src={profileImg} alt="My profile" />
+              <img id="profile__img" src={profileImg} alt="My profile" />
               <div id="overlay">
                 <div id="content">
                   <input style={{ display: "none" }} type="file" id="file" />
@@ -29,19 +29,19 @@ function App() {
               </div>
             </div>
 
-            <h3 id="twitter">judidoko</h3>
+            <h3 id="twitter">@judidoko</h3>
             <label style={{ display: "none" }}>Idoko Jude </label>
           </div>
 
           {/* Share Button Section */}
 
-          <button id="shareButton">
+          <button id="share__button">
             <RiShareForwardLine
               style={{ fontSize: "20px", color: "#98A2B3" }}
             />
           </button>
 
-          <button id="shareButtonDots" style={{ display: "none" }}>
+          <button id="share__button-dots" style={{ display: "none" }}>
             <FiMoreHorizontal
               style={{
                 fontSize: "20px",
@@ -52,27 +52,24 @@ function App() {
 
           {/* Links Section */}
 
-          <div id="linkSection">
+          <div id="link__section">
             <a id="btn__zuri" href="https://twitter.com/judidoko">
               Twitter Link
             </a>
-          </div>
-          <div id="linkSection">
+
             <a id="btn__zuri" href="https://training.zuri.team/">
               Zuri Team
             </a>
-          </div>
-          <div id="linkSection">
+
             <a
               id="books"
-              href="http://books.zuri.team"
+              href="https://books.zuri.team"
               title="Find books about design and coding"
             >
               Zuri Books
               <h6>Find books about design and coding</h6>
             </a>
-          </div>
-          <div id="linkSection">
+
             <a
               id="book__python"
               href="https://books.zuri.team/python-for-beginners?ref_id=idoko-jude"
@@ -80,16 +77,14 @@ function App() {
               Python Books
               <h6>Buy judidoko's Books on Pthon at discounted rate</h6>
             </a>
-          </div>
-          <div id="linkSection">
+
             <a id="pitch" href="https://background.zuri.team">
               Background Check for Coders
               <h6>
                 To find out more information about your coders; Click Here
               </h6>
             </a>
-          </div>
-          <div id="linkSection">
+
             <a id="book__design" href="https://books.zuri.team/design-rules">
               Design Books
               <h6>Check out free design book offered by Zuri</h6>
@@ -97,7 +92,7 @@ function App() {
           </div>
 
           {/* Social icon */}
-          <div id="social_icon">
+          <div id="social__icon">
             <a href="https://hngi9.zuriboard.com/dashboard">
               <img
                 src={slackImg}
@@ -112,15 +107,15 @@ function App() {
 
           {/* Footer Section */}
           <footer>
-            <div id="flex_container">
+            <div id="flex__container">
               <h2>
                 Zuri <label></label> Intenship
               </h2>
             </div>
-            <div id="flex_container">
+            <div id="flex__container">
               <h6>HNG Internship 9 Frontend Task</h6>
             </div>
-            <div id="flex_container">
+            <div id="flex__container">
               <img src={logo} alt="" />
             </div>
           </footer>

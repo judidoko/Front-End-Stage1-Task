@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-#profileSection {
+#profile__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@
     border-radius: 275px;
     
 }
-#profile_img {
+#profile__img {
     width: 88px;
     height: 88px;
     padding: 0px;
@@ -73,7 +73,7 @@
 }
 
 /* Share Botton */
-#shareButton {
+#share__button {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -83,12 +83,12 @@
     border: 1px dashed #D0D5DD;
     border-radius: 20px;
 }
-#shareButton:hover {
+#share__button:hover {
     background: #F9FAFB;
     color: #667085 !important;
     border: 1px dashed #D0D5DD;
 }
-#shareButton:focus {
+#share__button:focus {
     background: #FFFFFF;
     border: 1px dashed #D0D5DD;
     box-shadow: 0px 0px 0px 4px #F2F4F7;
@@ -96,8 +96,8 @@
 
 /* Links Area */
 
-#linkSection {
-    display: flex;
+#link__section {
+    display: grid;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -122,18 +122,18 @@
     color: #101828;;
     width: 1152px;
 }
-#linkSection a:hover {
+#link__section a:hover {
     background: #D0D5DD;
     color: #101828;
 }
-#linkSection a:focus {
+#link__ection a:focus {
     background: #EAECF0;
     border: 1px solid #98A2B3;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #EBE9FE;
 }
 
 /* Social Icon */
-#social_icon {
+#social__icon {
     background: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -161,20 +161,20 @@ footer {
     background: #FFFFFF;
 }
 
-footer>#flex_container {
+footer>#flex__container {
     font-family: "inter", sans-serif;
     flex: 1 1 20%;
     margin: 10px;
     height: 50px;
   }
-  #flex_container h2 {
+  #flex__container h2 {
     font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
     line-height: 28px; 
   }
-  #flex_container h6 {
+  #flex__container h6 {
     font-family: "inter", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -182,7 +182,7 @@ footer>#flex_container {
     line-height: 28px; 
     color: #667085;
   }
-  #flex_container label {
+  #flex__container label {
     background:#E7332B;
     height: 10px;
     width: 10px;
@@ -191,17 +191,17 @@ footer>#flex_container {
   }
 
   @media only screen and (max-width: 768px) {
-    #shareButton {
+    #share__button {
         right: 100px;
     }
     
   }
 
   @media only screen and (max-width: 425px) {
-    #shareButton {
+    #share__button {
         display: none;
     }
-    #shareButtonDots {
+    #share__button-dots {
         display: block !important;
         position: absolute;
         width: 40px;
@@ -211,11 +211,11 @@ footer>#flex_container {
         border: 1px dashed #D0D5DD;
         border-radius: 20px;
     }
-    #shareButtonDots:hover {
+    #share__Button-dots:hover {
         background: #F9FAFB;
         border: 1px dashed #D0D5DD;
     }
-    #shareButtonDots:focus {
+    #share__button-dots:focus {
         background: #FFFFFF;
         box-shadow: 0px 0px 0px 4px #F2F4F7;
     }
@@ -232,7 +232,7 @@ footer>#flex_container {
   }
 
   @media only screen and (max-width: 360px) {
-    #shareButtonDots {
+    #share__button-dots {
         right: 20px;
     }
     

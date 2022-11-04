@@ -1,12 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import profileImg from "../img/profile-pic.png";
-import logo from "../img/intern.png";
 import slackImg from "../img/logo1.JPG";
 import { BiCamera } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
 import { RiShareForwardLine } from "react-icons/ri";
 import { FiMoreHorizontal } from "react-icons/fi";
+import Footer from "../Componets/Footer";
+
 const Home = () => {
   return (
     <>
@@ -102,19 +103,7 @@ const Home = () => {
         </div>
 
         {/* Footer Section */}
-        <footer>
-          <div id="flex__container">
-            <h2>
-              Zuri <label></label> Intenship
-            </h2>
-          </div>
-          <div id="flex__container">
-            <h6>HNG Internship 9 Frontend Task</h6>
-          </div>
-          <div id="flex__container">
-            <img src={logo} alt="" />
-          </div>
-        </footer>
+        <Footer />
       </Container>
     </>
   );

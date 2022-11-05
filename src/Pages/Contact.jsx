@@ -54,6 +54,9 @@ const Contact = () => {
     if (!values.message) {
       errors.message = "Please Enter a Message!";
     }
+    if (!values.check_box) {
+      errors.check_box = "You need to check the box to agree!";
+    }
     return errors;
   };
   return (
@@ -126,6 +129,7 @@ const Contact = () => {
                 <input
                   type="checkbox"
                   id="check__box"
+                  name="check_box"
                   onBlur={handleFocus}
                   focused={focused.toString()}
                 />
@@ -134,6 +138,7 @@ const Contact = () => {
                   You agree to providing your data to {name} who may contact
                   you.
                 </label>
+                <p>{formErrors.check_box}</p>
               </div>
 
               <button id="btn__submit" type="submit">

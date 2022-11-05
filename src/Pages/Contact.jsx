@@ -54,7 +54,6 @@ const Contact = () => {
   return (
     <>
       <Container>
-        <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
         <div id="content__center">
           <div id="content">
             {/* Heading & Supporting Text Section */}

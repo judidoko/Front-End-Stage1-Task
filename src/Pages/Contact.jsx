@@ -14,6 +14,7 @@ const Contact = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [focused, setFocused] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,6 +25,10 @@ const Contact = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+  };
+
+  const handleFocus = (e) => {
+    setFocused(true);
   };
 
   useEffect(() => {
@@ -38,16 +43,16 @@ const Contact = () => {
     // const regex =
     //   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!values.first_name) {
-      errors.first_name = "First Name is required";
+      errors.first_name = "First Name is required!";
     }
     if (!values.last_name) {
-      errors.last_name = "Last Name is required";
+      errors.last_name = "Last Name is required!";
     }
     if (!values.email) {
-      errors.email = "Email is required";
+      errors.email = "Email is required!";
     }
     if (!values.message) {
-      errors.message = "Please Enter a Message";
+      errors.message = "Please Enter a Message!";
     }
     return errors;
   };
@@ -118,9 +123,14 @@ const Contact = () => {
               <p>{formErrors.message}</p>
 
               <div id="check__content" className="mb-3">
-                <input type="checkbox" id="check__box" />
+                <input
+                  type="checkbox"
+                  id="check__box"
+                  onBlur={handleFocus}
+                  focused={focused.toString()}
+                />
 
-                <label id="check__box-message">
+                <label htmlFor="check__box" id="check__box-message">
                   You agree to providing your data to {name} who may contact
                   you.
                 </label>

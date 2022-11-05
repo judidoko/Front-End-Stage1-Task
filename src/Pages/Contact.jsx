@@ -59,9 +59,8 @@ const Contact = () => {
               </div>
 
               <div id="check__content" className="mb-3">
-                <div id="check">
-                  <input type="checkbox" id="check__box" required />
-                </div>
+                <input type="checkbox" id="check__box" required />
+
                 <label for="check__box" id="check__box-message">
                   You agree to providing your data to Judidoko who may contact
                   you.

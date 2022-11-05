@@ -6,6 +6,7 @@ import { BiCamera } from "react-icons/bi";
 import { GoMarkGithub } from "react-icons/go";
 import { RiShareForwardLine } from "react-icons/ri";
 import { FiMoreHorizontal } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import Footer from "../Componets/Footer";
 
 const Home = () => {
@@ -83,9 +84,9 @@ const Home = () => {
             Design Books
             <h6>Check out free design book offered by Zuri</h6>
           </a>
-          <a id="contact" href="/Contact">
+          <Link to="/Contact" id="contact">
             Contact Me
-          </a>
+          </Link>
         </div>
 
         {/* Social icon */}

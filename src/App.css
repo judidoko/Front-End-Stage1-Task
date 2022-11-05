@@ -236,6 +236,16 @@ footer>#flex__container {
     line-height: 20px;
     color: #344054;
 }
+
+#form p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F83F23;
+}
+
 #first_name, #last_name {
     width: 348px;
     height: 44px;
@@ -288,6 +298,7 @@ footer>#flex__container {
 #message:focus {
     border: 1px solid #84CAFF !important;
     background: #FFFFFF !important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
 
  input[type="checkbox"] {
@@ -334,42 +345,14 @@ input[type="checkbox"]:checked + label::after {
     right: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid #1570EF;
-    border-radius: 6px;
-    background: #FFFFFF;
+    background-image: url(./img/checked-checkbox.png);
+    background-size: contain;
+    transform: scale(1);
+    opacity: 1;
+    transition: all .3 ease;
 }
 
-/*
-input[type="checkbox"]:checked {
-    background: #F9FAFB;
-    border: 1px solid #1570EF;
-  } */
 
-  /* #check__content {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  #check {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #1570EF;
-    border-radius: 6px;
-    background: #FFFFFF;
-    
-  }
-  #check input {
-    cursor: pointer;
-    opacity: 0;
-  } */
-  
-/* #check__box-message {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #475467;
-} */
 #btn__submit {
     padding: 12px 20px;
     width: 720px;
